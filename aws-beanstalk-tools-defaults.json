@@ -1,0 +1,20 @@
+
+{
+    "region" : "ca-central-1",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "APIApplication",
+    "environment"    : "PlayerAPI",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-c2d9a8a6,sg-09751068a554e0703\";\"aws:ec2:vpc,Subnets\"=\"subnet-969fd5fe\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.1.0 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "playerapi",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
